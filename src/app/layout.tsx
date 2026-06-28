@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: 'Pakistan\'s leading Revenue Cycle Management training center with CPB-accredited courses and expert-led instruction.',
   keywords: 'RCM training, medical billing, CPB certification, revenue cycle management, Pakistan, healthcare career',
   icons: {
-    icon: '/favicon.svg',
+    icon: '/favicon1.png',
   },
   openGraph: {
     title: 'RCMAlpha - Certified Professional Biller Training',
