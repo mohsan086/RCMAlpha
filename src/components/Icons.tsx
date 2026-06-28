@@ -2,7 +2,7 @@ const iconProps = {
   xmlns: 'http://www.w3.org/2000/svg',
   viewBox: '0 0 24 24',
   fill: '#1d951b',
-  'aria-hidden': 'true',
+  'aria-hidden': true,
 }
 
 export const ICONS = {
