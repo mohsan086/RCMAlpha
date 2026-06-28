@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'RCMAlpha - Certified Professional Biller Training',
-  description: 'Pakistan\'s #1 Revenue Cycle Management training program. Transform your healthcare career with CPB certification. 98% success rate, 500+ certified professionals.',
+  title: 'RCMAlpha | Revenue Cycle Management Training',
+  description: 'Pakistan\'s leading Revenue Cycle Management training center with CPB-accredited courses and expert-led instruction.',
   keywords: 'RCM training, medical billing, CPB certification, revenue cycle management, Pakistan, healthcare career',
   icons: {
     icon: '/favicon.svg',
