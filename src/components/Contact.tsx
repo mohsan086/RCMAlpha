@@ -2,11 +2,12 @@
 
 import { useState } from 'react'
 import styles from './Contact.module.css'
+import { ICONS, type IconName } from './Icons'
 
-const contactInfo = [
-  { icon: '📞', value: '+92 342 3100648' },
-  { icon: '✉️', value: 'rcmalpha@gmail.com' },
-  { icon: '📍', value: 'Rawalpindi, Pakistan' },
+const contactInfo: { icon: IconName; value: string }[] = [
+  { icon: 'phone', value: '+92 312 7846016' },
+  { icon: 'mail', value: 'rcmalpha@gmail.com' },
+  { icon: 'location', value: 'Rawalpindi, Pakistan' },
 ]
 
 export default function Contact() {
@@ -60,7 +61,7 @@ export default function Contact() {
             <div className={styles.contactItems}>
               {contactInfo.map((c) => (
                 <div key={c.value} className={styles.contactItem}>
-                  <div className={styles.contactIcon}>{c.icon}</div>
+                  <div className={styles.contactIcon}>{ICONS[c.icon]}</div>
                   <span>{c.value}</span>
                 </div>
               ))}

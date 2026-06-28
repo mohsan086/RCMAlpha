@@ -5,10 +5,10 @@
   right: 0;
   z-index: 100;
   padding: 0 2rem;
-  background: rgba(10, 22, 40, 0.7);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid var(--border-subtle);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,21 +17,26 @@
 }
 
 .scrolled {
-  background: rgba(10, 22, 40, 0.95);
+  background: rgba(255, 255, 255, 0.95);
   border-bottom-color: var(--border-subtle);
 }
 
 .logo {
-  font-family: var(--font-display);
-  font-size: 1.3rem;
-  font-weight: 800;
-  color: var(--white);
-  letter-spacing: -0.5px;
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
 }
 
-.logo span {
-  color: var(--blue-light);
+.logoImage {
+  height: 52px;
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .logoImage {
+    height: 44px;
+  }
 }
 
 .links {
@@ -44,18 +49,18 @@
 .links a {
   font-size: 0.875rem;
   font-weight: 500;
-  color: var(--steel);
+  color: var(--text-muted);
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .links a:hover {
-  color: var(--white);
+  color: var(--text);
 }
 
 .cta {
-  background: var(--blue) !important;
-  color: var(--white) !important;
+  background: var(--green) !important;
+  color: var(--text) !important;
   padding: 0.5rem 1.25rem;
   border-radius: 8px;
   font-weight: 600 !important;
@@ -63,7 +68,7 @@
 }
 
 .cta:hover {
-  background: var(--blue-light) !important;
+  background: var(--green-light) !important;
   transform: translateY(-1px);
 }
 
@@ -81,7 +86,7 @@
   display: block;
   width: 22px;
   height: 2px;
-  background: var(--white);
+  background: #1b6dc1;
   border-radius: 2px;
   transition: transform 0.25s, opacity 0.25s;
 }

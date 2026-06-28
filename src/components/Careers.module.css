@@ -1,5 +1,5 @@
 .section {
-  background: var(--navy-mid);
+  background: var(--surface);
   padding: 4.25rem 2rem;
 }
 
@@ -13,7 +13,7 @@
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--blue-light);
+  color: var(--green);
   margin-bottom: 0.75rem;
 }
 
@@ -24,10 +24,11 @@
   line-height: 1.15;
   letter-spacing: -0.025em;
   margin-bottom: 1rem;
+  color: #1b6dc1;
 }
 
 .sub {
-  color: var(--steel);
+  color: var(--text-muted);
   font-size: 1rem;
   max-width: 540px;
   line-height: 1.7;
@@ -42,22 +43,27 @@
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.025);
-  border: 1px solid var(--border-subtle);
+  background: var(--surface-strong);
+  border: 1px solid rgba(37, 99, 235, 0.4);
   border-radius: 14px;
   padding: 1.75rem;
-  transition: border-color 0.2s, transform 0.2s;
+  transition: transform 0.2s;
 }
 
 .card:hover {
-  border-color: rgba(37, 99, 235, 0.4);
   transform: translateY(-2px);
 }
 
 .icon {
-  font-size: 1.5rem;
+  font-size: 0;
   margin-bottom: 1rem;
   display: block;
+  color: #1d951b;
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
 }
 
 .card h3 {
@@ -65,12 +71,12 @@
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: var(--white);
+  color: #1b6dc1;
 }
 
 .card p {
   font-size: 0.875rem;
-  color: var(--steel);
+  color: var(--text-muted);
   line-height: 1.65;
 }
 
@@ -92,7 +98,7 @@
   font-size: 2.25rem;
   font-weight: 800;
   display: block;
-  background: linear-gradient(135deg, #93C5FD, #2563EB);
+  background: linear-gradient(135deg, var(--green), var(--blue));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -102,6 +108,6 @@
 
 .statLabel {
   font-size: 0.8rem;
-  color: var(--steel);
+  color: var(--text-muted);
   font-weight: 500;
 }

@@ -1,4 +1,5 @@
 import styles from './Curriculum.module.css'
+import { ICONS, type IconName } from './Icons'
 
 const weeks = [
   { week: '01', title: 'Intro to Medical Billing', tags: ['Fundamentals', 'Healthcare Overview', 'Career Paths'] },
@@ -11,11 +12,11 @@ const weeks = [
   { week: '08', title: 'Software Practice', tags: ['Live Software', 'Real Scenarios', 'Hands-on'] },
 ]
 
-const meta = [
-  { icon: '⏱', label: 'Duration', value: '8 Weeks' },
-  { icon: '🌐', label: 'Format', value: 'Online + Live' },
-  { icon: '🏅', label: 'Certification', value: 'CPB' },
-  { icon: '👥', label: 'Class Size', value: 'Max 20' },
+const meta: { icon: IconName; label: string; value: string }[] = [
+  { icon: 'clock', label: 'Duration', value: '8 Weeks' },
+  { icon: 'globe', label: 'Format', value: 'Online + Live' },
+  { icon: 'medal', label: 'Certification', value: 'CPB' },
+  { icon: 'users', label: 'Class Size', value: 'Max 20' },
 ]
 
 export default function Curriculum() {
@@ -32,7 +33,7 @@ export default function Curriculum() {
           <div className={styles.metaRow}>
             {meta.map((m) => (
               <div key={m.label} className={styles.metaPill}>
-                <span>{m.icon}</span>
+                <span>{ICONS[m.icon]}</span>
                 <strong>{m.value}</strong>
               </div>
             ))}

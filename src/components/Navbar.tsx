@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
     <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
       <a href="#home" className={styles.logo}>
-        RCM<span>Alpha</span>
+        <img src="/logo1.png" alt="RCMAlpha logo" className={styles.logoImage} />
       </a>
 
       <ul className={`${styles.links} ${menuOpen ? styles.open : ''}`}>

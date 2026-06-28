@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.inner}>
         <div className={styles.brand}>
-          <span className={styles.logo}>RCM<span>Alpha</span></span>
+          <img src="/logo1.png" alt="RCMAlpha logo" className={styles.logoImage} />
           <p className={styles.tagline}>
             Pakistan&apos;s leading Revenue Cycle<br />
             Management training center.
@@ -31,7 +31,7 @@ export default function Footer() {
         <div className={styles.section}>
           <h3 className={styles.heading}>Contact</h3>
           <div className={styles.contact}>
-            <a href="tel:+923423100648">+92 342 3100648</a>
+            <a href="tel:+923127846016">+92 312 7846016</a>
             <a href="mailto:rcmalpha@gmail.com">rcmalpha@gmail.com</a>
             <span>Rawalpindi, Pakistan</span>
           </div>

@@ -1,23 +1,24 @@
 import styles from './Careers.module.css'
+import { ICONS, type IconName } from './Icons'
 
-const roles = [
+const roles: { icon: IconName; title: string; desc: string }[] = [
   {
-    icon: '💼',
+    icon: 'briefcase',
     title: 'RCM Specialist',
     desc: 'Manage the patient revenue cycle with major healthcare providers and make high-impact decisions.',
   },
   {
-    icon: '🏥',
+    icon: 'hospital',
     title: 'Care Coordinator',
     desc: 'Lead interdisciplinary teams and coordinate comprehensive patient care plans.',
   },
   {
-    icon: '📋',
+    icon: 'clipboard',
     title: 'Program Manager',
     desc: 'Oversee RCM programs within healthcare organizations and ensure quality compliance.',
   },
   {
-    icon: '🎯',
+    icon: 'target',
     title: 'RCM Consultant',
     desc: 'Provide expert guidance to healthcare institutions on RCM implementation and optimization.',
   },
@@ -42,7 +43,7 @@ export default function Careers() {
         <div className={styles.grid}>
           {roles.map((r) => (
             <div key={r.title} className={styles.card}>
-              <span className={styles.icon}>{r.icon}</span>
+              <span className={styles.icon}>{ICONS[r.icon]}</span>
               <h3>{r.title}</h3>
               <p>{r.desc}</p>
             </div>

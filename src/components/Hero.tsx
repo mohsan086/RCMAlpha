@@ -11,7 +11,7 @@ export default function Hero() {
           <polyline
             points="0,40 100,40 120,40 130,10 140,70 150,20 160,55 170,40 400,40 420,40 430,15 440,65 450,18 460,50 470,40 700,40 720,40 730,12 740,68 750,15 760,52 770,40 1000,40 1020,40 1030,14 1040,66 1050,17 1060,51 1070,40 1200,40"
             fill="none"
-            stroke="#2563EB"
+            stroke="#1d951b"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -26,9 +26,9 @@ export default function Hero() {
         </div>
 
         <h1>
-          Become a{' '}
+          <span className={styles.blue}>Become a</span>{' '}
           <span className={styles.accent}>Certified Professional</span>{' '}
-          Medical Biller
+          <span className={styles.blue}>Medical Biller</span>
         </h1>
 
         <p className={styles.sub}>

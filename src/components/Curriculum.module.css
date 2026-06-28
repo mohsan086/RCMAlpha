@@ -1,5 +1,5 @@
 .section {
-  background: var(--navy);
+  background: var(--surface);
   padding: 4.25rem 2rem;
 }
 
@@ -22,7 +22,7 @@
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--blue-light);
+  color: var(--green);
   margin-bottom: 0.75rem;
 }
 
@@ -32,6 +32,7 @@
   font-weight: 800;
   line-height: 1.15;
   letter-spacing: -0.025em;
+  color: #1b6dc1;
 }
 
 .metaRow {
@@ -44,16 +45,28 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--surface-strong);
   border: 1px solid var(--border-subtle);
   border-radius: 8px;
   padding: 0.5rem 0.875rem;
   font-size: 0.8rem;
-  color: var(--steel);
+  color: var(--text-muted);
+}
+
+.metaPill span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #1d951b;
+}
+
+.metaPill span svg {
+  width: 18px;
+  height: 18px;
 }
 
 .metaPill strong {
-  color: var(--white);
+  color: var(--text);
   font-weight: 600;
 }
 
@@ -64,15 +77,14 @@
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.025);
-  border: 1px solid var(--border-subtle);
+  background: var(--surface-strong);
+  border: 1px solid rgba(37, 99, 235, 0.35);
   border-radius: 12px;
   padding: 1.25rem 1.5rem;
-  transition: border-color 0.2s, transform 0.2s;
+  transition: transform 0.2s;
 }
 
 .card:hover {
-  border-color: rgba(37, 99, 235, 0.35);
   transform: translateY(-2px);
 }
 
@@ -80,7 +92,7 @@
   font-family: var(--font-display);
   font-size: 0.7rem;
   font-weight: 700;
-  color: var(--blue-light);
+  color: var(--green);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 0.4rem;
@@ -91,7 +103,7 @@
   font-size: 0.95rem;
   font-weight: 700;
   margin-bottom: 0.75rem;
-  color: var(--white);
+  color: var(--text);
   line-height: 1.3;
 }
 
@@ -104,9 +116,9 @@
 .tag {
   font-size: 0.7rem;
   font-weight: 500;
-  background: rgba(37, 99, 235, 0.12);
-  color: var(--blue-light);
+  background: rgba(29, 149, 27, 0.12);
+  color: var(--green);
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
-  border: 1px solid rgba(37, 99, 235, 0.2);
+  border: 1px solid rgba(29, 149, 27, 0.2);
 }

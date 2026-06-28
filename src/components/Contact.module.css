@@ -1,5 +1,5 @@
 .section {
-  background: var(--navy);
+  background: var(--surface);
   padding: 4.25rem 2rem;
 }
 
@@ -20,7 +20,7 @@
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--blue-light);
+  color: var(--green);
   margin-bottom: 0.75rem;
 }
 
@@ -31,10 +31,11 @@
   letter-spacing: -0.025em;
   margin-bottom: 1rem;
   line-height: 1.15;
+  color: #1b6dc1;
 }
 
 .info p {
-  color: var(--steel);
+  color: var(--text-muted);
   line-height: 1.75;
   margin-bottom: 2rem;
   font-size: 0.975rem;
@@ -50,25 +51,30 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  color: var(--text-dim);
+  color: var(--text-muted);
   font-size: 0.9rem;
 }
 
 .contactIcon {
   width: 40px;
   height: 40px;
-  background: var(--blue-glow);
-  border: 1px solid rgba(37, 99, 235, 0.25);
+  background: var(--surface-soft);
+  border: 1px solid rgba(27, 109, 193, 0.25);
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  font-size: 1rem;
+  color: #1d951b;
+}
+
+.contactIcon svg {
+  width: 20px;
+  height: 20px;
 }
 
 .formCard {
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--surface-strong);
   border: 1px solid var(--border-subtle);
   border-radius: 20px;
   padding: 2.5rem;
@@ -88,7 +94,7 @@
   display: block;
   font-size: 0.75rem;
   font-weight: 700;
-  color: var(--steel);
+  color: var(--text-muted);
   margin-bottom: 0.4rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -97,13 +103,13 @@
 .formGroup input,
 .formGroup textarea {
   width: 100%;
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--surface);
   border: 1px solid var(--border-subtle);
   border-radius: 8px;
   padding: 0.75rem 1rem;
   font-family: var(--font-body);
   font-size: 0.9rem;
-  color: var(--white);
+  color: var(--text);
   transition: border-color 0.2s;
   outline: none;
 }
@@ -115,7 +121,7 @@
 
 .formGroup input::placeholder,
 .formGroup textarea::placeholder {
-  color: rgba(139, 163, 199, 0.45);
+  color: rgba(71, 85, 105, 0.45);
 }
 
 .formGroup textarea {
@@ -125,8 +131,8 @@
 
 .submitBtn {
   width: 100%;
-  background: var(--blue);
-  color: var(--white);
+  background: var(--green);
+  color: var(--text);
   padding: 1rem 2rem;
   border-radius: 10px;
   font-weight: 700;
@@ -137,7 +143,7 @@
 }
 
 .submitBtn:hover {
-  background: var(--blue-light);
+  background: var(--green-light);
   transform: translateY(-2px);
 }
 
@@ -180,7 +186,7 @@
 }
 
 .success p {
-  color: var(--steel);
+  color: var(--text-muted);
   font-size: 0.95rem;
 }
 
