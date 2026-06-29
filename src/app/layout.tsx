@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'RCMAlpha | Revenue Cycle Management Training',
+  title: 'RCMAlpha | Medical Billing Course in Pakistan | CPB Certification',
   description: 'Pakistan\'s leading Revenue Cycle Management training center with CPB-accredited courses and expert-led instruction.',
-  keywords: 'RCM training, medical billing, CPB certification, revenue cycle management, Pakistan, healthcare career',
+  keywords: 'RCM training, medical billing, medical billing course, Rawalpindi, CPB certification, revenue cycle management, Pakistan, healthcare career',
   icons: {
     icon: '/favicon1-removebg-preview.png',
   },
