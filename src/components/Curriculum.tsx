@@ -27,7 +27,7 @@ export default function Curriculum() {
           <div>
             <p className={styles.label}>Course Curriculum</p>
             <h2 className={styles.title}>
-              8-Week Comprehensive<br />RCM Program
+              8-Week Medical Billing<br />Course
             </h2>
           </div>
           <div className={styles.metaRow}>

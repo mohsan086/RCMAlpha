@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     icon: '/favicon1-removebg-preview.png',
   },
   openGraph: {
-    title: 'RCMAlpha - Certified Professional Biller Training',
+    title: 'RCMAlpha - Certified Professional Medical Biller Course',
     description: 'CPB-accredited training program with 98% success rate. Join 500+ certified healthcare professionals.',
     type: 'website',
   },
